@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+
+  a {
+    text-decoration: none;
+    color: blue;
+  }
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-image: url(city.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+}
+
+.content-container {
+  height: 100%;
+  width: 100%;
+  padding: 12%;
+}
+.logIn-container {
+  height: 80vh;
+  width: 35vw;
+  border-radius: 20px;
+  backdrop-filter: blur(4px);
+}
+
+.question {
+  margin-top: 10px;
+}
+
+label {
+  padding: 5px;
+  font-size: 18px;
+}
+/* input{
+  color: black;
+} */
+
+#email {
+  width: 100%;
+  padding: 20px;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  border-bottom: 2px solid black;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+#email:-webkit-autofill,
+#email:-webkit-autofill:hover,
+#email:-webkit-autofill:active,
+#email:-webkit-autofill:focus{
+  -webkit-box-shadow: 0 0 0 1000 white inset !important;
+  box-shadow: 0 0 0 1000 white inset !important;
+  transition: background-color 5000s ease-in-out 0s !important;
+  -webkit-text-fill-color: #fff;
+}
+
+.password-section {
+  display: flex;
+  border-bottom: 2px solid black;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  overflow: hidden;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.password-section .password {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background: transparent;
+}
+.password:focus{
+  border: none;
+  outline: none;
+}
+
+.show {
+  color: black;
+  background: transparent;
+  border: none;
+}
+
+.show:active {
+  background: none;
+}
+
+.password input {
+  height: auto;
+  width: auto;
+  margin: 15px 5px 0 0;
+}
+
+.submit {
+  height: 10%;
+  width: 100%;
+  border-radius: 20px;
+  background-color: rgb(23, 31, 57);
+  margin-bottom: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+button:active {
+  background-color: #fff;
+  color: #000;
+  border: none;
+}
+
+.option {
+  margin-top: 20px;
+}
+
+img {
+  height: 15%;
+  width: 15%;
+  border-radius: 100% 100%;
+  transition: all 0.2s linear;
+  margin-top: 5px;
+}
+.logo img:hover{
+  transform: scale(1.3);
+}
+
+@media (width < 900px) {
+  .logIn-container {
+    height: 90%;
+    width: 90%;
+  }
+  img{
+    height: 15%;
+    width: 15%;
+  }
+}

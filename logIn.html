@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="logIn.css">
+  <title>Login</title>
+</head>
+
+<body>
+  <form action="#" class="logIn-container">
+      <div class="content-container">
+        <h1>Sign in</h1>
+        <p class="question">Don't have an account? <a href="#">Register here</a></p>
+        <br>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Enter email" autocomplete="off" required>
+        <br>
+        <label for="password">Password</label>
+        <div class="password-section">
+          <input type="password" name="password" class="password" placeholder="Enter password" required>
+          <button class="show" type="button">Show</button>
+        </div>
+        <br>
+        <section class="password">
+          <span><input type="checkbox" name="remember"> Remember me</span>
+          <a href="#">Forget Password</a>
+        </section>
+        <br>
+        <button type="submit" class="submit">Sign in</button>
+        <hr>
+        <p class="option">or continue with</p>
+        <div class="logo">
+          <span><a href="https://google.com" target="_blank"><img src="google2.png" alt="Google"></a></span>
+          <span><a href="https://apple.com" target="_blank"><img src="apple2.png" alt="Apple"></a></span>
+          <span><a href="https://facebook.com" target="_blank"><img src="facebook2.png" alt="Facebook"></a></span>
+        </div>
+      </div>
+  </form>
+  <script src="script.js"></script>
+</body>
+
+</html>
